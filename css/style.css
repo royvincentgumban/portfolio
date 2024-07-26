@@ -177,44 +177,6 @@ img {
     color: #f2f2f2;
 }
 
-.project1-hovered {
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px;
-    z-index: 1;
-    display: none;
-}
-
-
-.project2-hovered {
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px;
-    z-index: 1;
-    display: none;
-}
-
-.project3-hovered {
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px;
-    z-index: 1;
-    display: none;
-}
-
-.project4-hovered {
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px;
-    z-index: 1;
-    display: none;
-}
-
-
 #contact-me {
     transform: translateY(100%);
     transition: all .75s ease;
@@ -404,10 +366,6 @@ img {
     .tech-stack-container {
         flex: 0 0 50%;
         max-width: 0 0 50%;
-    }
-
-    .project1-hovered, .project2-hovered, .project3-hovered, .project4-hovered {
-        display: none;
     }
 
 }
