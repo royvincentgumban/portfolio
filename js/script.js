@@ -124,14 +124,6 @@ clickedLI.forEach(item => {
 // cursor and hover div
 const cursor = document.querySelector('.cursor');
 const h1Elements = document.querySelectorAll('h1');
-const project1 = document.querySelector('.project-1');
-const project2 = document.querySelector('.project-2');
-const project3 = document.querySelector('.project-3');
-const project4 = document.querySelector('.project-4');
-const hoveredProject = document.querySelector('.project1-hovered');
-const hoveredProject2 = document.querySelector('.project2-hovered');
-const hoveredProject3 = document.querySelector('.project3-hovered');
-const hoveredProject4 = document.querySelector('.project4-hovered');
 
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
@@ -147,71 +139,6 @@ h1Elements.forEach(h1 => {
         cursor.style.transform = 'scale(1)';
     });
 });
-
-project1.addEventListener('mouseenter', () => {
-    hoveredProject.style.display = 'block';
-    document.addEventListener('mousemove', hoveredProjectOne);
-});
-
-project1.addEventListener('mouseleave', () => {
-    hoveredProject.style.display = 'none';
-    document.removeEventListener('mousemove', hoveredProjectOne);
-});
-
-
-project2.addEventListener('mouseenter', () => {
-  hoveredProject2.style.display = 'block';
-  document.addEventListener('mousemove', hoveredProjectTwo);
-});
-
-project2.addEventListener('mouseleave', () => {
-  hoveredProject2.style.display = 'none';
-  document.removeEventListener('mousemove', hoveredProjectTwo);
-});
-
-project3.addEventListener('mouseenter', () => {
-  hoveredProject3.style.display = 'block';
-  document.addEventListener('mousemove', hoveredProjectThree);
-});
-
-project3.addEventListener('mouseleave', () => {
-  hoveredProject3.style.display = 'none';
-  document.removeEventListener('mousemove', hoveredProjectThree);
-});
-
-
-project4.addEventListener('mouseenter', () => {
-  hoveredProject4.style.display = 'block';
-  document.addEventListener('mousemove', hoveredProjectFour);
-});
-
-project4.addEventListener('mouseleave', () => {
-  hoveredProject4.style.display = 'none';
-
-  document.removeEventListener('mousemove', hoveredProjectFour);
-});
-
-function hoveredProjectOne(e) {
-    hoveredProject.style.left = e.clientX + 'px';
-    hoveredProject.style.top = e.clientY + 'px';
-}
-
-function hoveredProjectTwo(e) {
-  hoveredProject2.style.left = e.clientX + 'px';
-  hoveredProject2.style.top = e.clientY + 'px';
-}
-
-function hoveredProjectThree(e) {
-  hoveredProject3.style.left = e.clientX + 'px';
-  hoveredProject3.style.top = e.clientY + 'px';
-}
-
-function hoveredProjectFour(e) {
-  hoveredProject4.style.left = e.clientX + 'px';
-  hoveredProject4.style.top = e.clientY + 'px';
-}
-
-
 
 // scroll animation
 const scaleUpContainer = document.querySelector('.scale-up-container');

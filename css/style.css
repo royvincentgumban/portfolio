@@ -406,4 +406,8 @@ img {
         max-width: 0 0 50%;
     }
 
+    .project1-hovered, .project2-hovered, .project3-hovered, .project4-hovered {
+        display: none;
+    }
+
 }
