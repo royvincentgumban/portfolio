@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Programming</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <main>
+        <div class="fixed top-12 right-12 z-50 flex items-center gap-4 overflow-hidden" id="showToggle">
+            <div class="text-[#f2f2f2] relative hidden lg:block" id="menu-title">
+                <h2>MENU</h2>
+            </div>
+
+            <div class="w-10 h-10 bg-[#1c1c1c] rounded-full border-[5px] border-[#f2f2f2] text-md text-[#f2f2f2] text-center flex items-center justify-center">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+
+        <div class="fixed top-12 right-12 z-50 hidden flex items-center gap-4" id="closeToggle">
+            <div class="w-10 h-10 bg-[#1c1c1c] rounded-full border-[5px] border-[#f2f2f2] text-md text-[#f2f2f2] text-center flex items-center justify-center">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <section class="w-full min-h-screen relative bg-[#f2f2f2]">
+            <div class="w-full h-[250px] m-auto overflow-hidden bg-[#1c1c1c] rounded-bl-[1.5rem] rounded-br-[1.5rem] py-8">
+                <div class="max-w-[1300px] m-auto overflow-hidden ">
+
+                
+                    <div class="w-full h-32 flex flex-col items-start justify-center p-8 mb-4">
+                        <h2 class="relative uppercase leading-normal text-4xl font-bold text-white tracking-wide
+                        before:absolute before:top-1/2 before:-translate-y-1/2 before:left-56 before:w-[200px] before:h-1 before:bg-white lg:before:w-[400px] md:before:w-[400px] sm:before:w-[300px] xs:before:w-[200px]"
+                        >Tech Stack</h2>
+                    </div>
+
+                    <div class="w-full px-8 text-[#f2f2f2]">
+                        <span>Here are the technology stacks I utilized in my programming endeavors.</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="w-full h-full mt-5">
+                <div class="max-w-[1300px] m-auto overflow-hidden py-8"> 
+                    <div class="flex flex-wrap">
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/html.png" alt="">
+                                <p class="text-center mt-4">HTML</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/css.png" alt="">
+                                <p class="text-center mt-4">CSS</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/bootstrap.png" alt="">
+                                <p class="text-center mt-4">Bootstrap</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/php.png" alt="">
+                                <p class="text-center mt-4">PHP</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/js.png" alt="">
+                                <p class="text-center mt-4">JavaScript</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/react.png" alt="">
+                                <p class="text-center mt-4">ReactJS</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/node.png" alt="">
+                                <p class="text-center mt-4">NodeJS</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/mysql.png" alt="">
+                                <p class="text-center mt-4">MySQL</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/figma.png" alt="">
+                                <p class="text-center mt-4">Figma</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/photoshop.png" alt="">
+                                <p class="text-center mt-4">Adobe Photoshop</p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-container">
+                            <div class="tech-stack-item">
+                                <img src="../assets/icons/illustrator.png" alt="">
+                                <p class="text-center mt-4">Adobe Illustrator</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Show menu -->
+        <div class="relative" id="menu-show">
+            <div class="max-w-[1300px] h-screen flex flex-col items-start justify-between m-auto px-8">
+                <div class="w-full">
+                    <ul class="flex flex-col items-start justify-center gap-10 font-normal text-5xl lg:text-6xl tracking-normal text-white mt-20">
+                        <li class="relative before:absolute before:w-0 before:h-[3px] before:-bottom-4 before:bg-white hover:before:w-full hover:before:transition-all hover:before:duration-500 hover:before:ease-in-out">
+                            <a href="../index.html">Home</a>
+                        </li>
+
+                        <li class="relative before:absolute before:w-0 before:h-[3px] before:-bottom-4 before:bg-white hover:before:w-full hover:before:transition-all hover:before:duration-500 hover:before:ease-in-out">
+                            <a href="../index.html#about">About</a>
+                        </li>
+
+                        <li class="relative before:absolute before:w-0 before:h-[3px] before:-bottom-4 before:bg-white hover:before:w-full hover:before:transition-all hover:before:duration-500 hover:before:ease-in-out">
+                            <a href="../index.html#projects">Project</a>
+                        </li>
+
+                        <li class="relative before:absolute before:w-0 before:h-[3px] before:-bottom-4 before:bg-white hover:before:w-full hover:before:transition-all hover:before:duration-500 hover:before:ease-in-out">
+                            <a href="../index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full border-t-2 py-2">
+                    <div class="max-w-[1300px] flex justify-between">
+                        <div class="p-2">
+                            <ul class="flex items-center justify-center gap-8 text-2xl">
+                                <li class="hover:bg-[#f2f2f2] hover:text-[#1c1c1c] text-[#f2f2f2] px-2 py-1 rounded-full" title="Facebook"><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                                <li class="hover:bg-[#f2f2f2] hover:text-[#1c1c1c] text-[#f2f2f2] px-2 py-1 rounded-full" title="Github"><a href="#"><i class="ri-github-fill"></i></a></li>
+                                <li class="hover:bg-[#f2f2f2] hover:text-[#1c1c1c] text-[#f2f2f2] px-2 py-1 rounded-full" title="Instagram"><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                                <li class="hover:bg-[#f2f2f2] hover:text-[#1c1c1c] text-[#f2f2f2] px-2 py-1 rounded-full" title="G-mail"><a href="#"><i class="ri-mail-fill"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="text-white uppercase p-2 flex items-center">
+                            <p>Portfolio of Roy Gumban</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

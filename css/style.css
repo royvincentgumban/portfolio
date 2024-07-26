@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --max-width: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    overscroll-behavior: none;
+    background: #f2f2f2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: center;
+}
+
+.scroll-down-icon {
+    transition: all 0.4s ease;
+    animation: move-down 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes move-down {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+#menu-title {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+#menu-title.fadeout {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+#menu-show {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color:#1c1c1c;
+    z-index: 100;
+    transition: all .75s ease-in-out; 
+}
+
+
+.show-menu {
+    top: 0 !important;
+}
+
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.1s ease;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    display: block;
+    z-index: 1;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1c1c1c;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.skills:hover::before {
+    height: 100%;
+}
+
+.skills:hover {
+    color: #f2f2f2;
+}
+
+.arrow {
+    transition: all 0.4s ease;
+}
+
+.skills:hover .arrow {
+    transform: rotate(-45deg);
+}
+
+.view-work {
+    overflow: hidden;
+    transform: translateX(-20px);
+    transition: all 0.4s ease;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.skills:hover .view-work {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.header-title {
+    overflow: hidden;
+}
+
+
+.header-title h1 {
+    transform: translateY(100%);
+    transition: all 1s ease;
+}
+
+.header-title.h1-loaded h1 {
+    transform: translateY(0%);
+}
+
+.div-wrapper {
+    display: flex;
+
+}
+
+.slide {
+    flex: 1 0 100%;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.slide.active {
+    display: block;
+}
+
+.target-div {
+    cursor: pointer;
+}
+
+.target-div.active {
+    background: #1c1c1c;
+    color: #f2f2f2;
+    border-radius: 0.25em;
+}
+
+.target-div:not(.active):hover {
+    background: rgba(28, 28, 28, .6);
+    border-radius: 0.25em;
+    color: #f2f2f2;
+}
+
+.project1-hovered {
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    z-index: 1;
+    display: none;
+}
+
+
+.project2-hovered {
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    z-index: 1;
+    display: none;
+}
+
+.project3-hovered {
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    z-index: 1;
+    display: none;
+}
+
+.project4-hovered {
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    z-index: 1;
+    display: none;
+}
+
+
+#contact-me {
+    transform: translateY(100%);
+    transition: all .75s ease;
+}
+
+
+
+/* -------------------- ABOUT PAGE -------------------- */
+
+.profile {
+    width: 280px;
+    height: 350px;
+    background: linear-gradient(rgba(28, 28, 28, .1), rgba(28, 28, 28, .1)), url(../assets/img/profile.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* -------------------- PROJECTS PAGE -------------------- */
+
+/*
+.project-1 {
+    background: url(../assets/projects/landing-pages/Landing-Page-1.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+*/
+
+.project-1, .project-2, .project-3, .project-4 {
+    position: relative;
+}
+
+.project-1::before, .project-2::before, .project-3::before, .project-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(28, 28, 28, .1), rgba(28, 28, 28, .1));
+}
+
+.website-container {
+    flex: 0 0 calc(100% / 2);
+    max-width: 0 0 calc(100% / 2);
+    padding: 1em;
+}
+
+.website-item {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.website-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.graphics-container {
+    flex: 0 0 calc(100% / 3);
+    max-width: 0 0 calc(100% / 3);
+    padding: 1em;
+}
+
+.graphics-item {
+    width: 100%;
+    height: 450px;
+    background-color: red;
+}
+
+.graphics-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.tech-stack-container {
+    flex: 0 0 calc(100% / 6);
+    max-width: 0 0 calc(100% / 6);
+    padding: 1em;
+    margin-bottom: 4em;
+}
+
+.tech-stack-item {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.tech-stack-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.active {
+    display: block;
+}
+
+.filters .filter-item.active {
+    background-color: #f2f2f2;
+    color: #1c1c1c;
+}
+
+/* -------------------- SCALE -------------------- */
+
+#scale-up {
+    display: flex;
+    justify-content: center;
+    min-height: 200vh;
+}
+
+.sticky {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.scale-up-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(.5);
+    will-change: transform;
+    background: #1c1c1c;
+    padding: 2em 4em;
+}
+
+#scale-down {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.scale-down-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    will-change: transform;
+    background: #f2f2f2;
+    border-radius: 0;
+}
+
+
+#showToggle, #closeToggle {
+    z-index: 999;
+    transition: .3s;
+}
+
+
+#content-overlay {
+    width: 100%;
+    height: fit-content;
+}
+
+
+/* -------------------- ANIMATION & TRANSITIONS -------------------- */
+
+@media only screen and (max-width:576px) {
+
+    #showToggle {
+        display: flex !important;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    #closeToggle {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    
+
+    .website-container, .graphics-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tech-stack-container {
+        flex: 0 0 50%;
+        max-width: 0 0 50%;
+    }
+
+}
