@@ -45,7 +45,8 @@
 
                     <div class="max-w-full h-screen bg-transparent overflow-hidden" id="home">
                         <div class="h-full w-full bg-[#1c1c1c] relative" id="particles-js">
-                            <div class="cursor"></div>
+
+                            <div class="cursor hidden md:block lg:block"></div>
                 
                             <div class="max-w-[1300px] w-full h-full m-auto" id="content-overlay">
                                 <div class="p-0 lg:p-12 bg-transparent flex flex-col text-white absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
@@ -53,7 +54,7 @@
                                     " >
             
                                     <div class="text-center mb-10 w-min m-auto header-title">
-                                        <h1 class="text-[#f2f2f2] uppercase font-bold text-6xl sm:text-8xl">Portfolio</h1>
+                                        <h1 class="text-[#f2f2f2] uppercase font-bold text-6xl sm:text-8xl" data-aos="fade-up">Portfolio</h1>
                                     </div>
                                     
                                     <div class="w-full flex items-center justify-between text-center">
@@ -68,7 +69,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="text-center absolute lg:-bottom-1/2 -bottom-full left-1/2 -translate-x-1/2">
+                                    <div class="text-center absolute lg:-bottom-1/2 -bottom-52 left-1/2 -translate-x-1/2">
                                         <div class="flex flex-col items-center justify-center gap-4">
                                             <p class="uppercase text-[#f2f2f2] text-xs sm:text-sm md:text-md lg:text-base">scroll down</p>
                                             <span class="text-lg scroll-down-icon"><i class="ri-arrow-down-line text-[#f0eae4]"></i></span>
@@ -99,19 +100,20 @@
                 <div class="w-full h-full">
                     <div class="flex flex-wrap">
                         <div class="flex-none flex-shrink-0 w-full lg:w-[30%] p-2">
-                            <div class="w-full h-[500px] px-4 py-8">
+                            <div class="w-full h-[500px] px-4 py-8 overflow-hidden">
                                 <div class="profile relative m-auto rounded-tr-[50%] rounded-bl-[50%]
                                 before:absolute before:-top-5 before:left-5 before:w-full before:h-full before:border-2 before:border-[#1c1c1c] before:rounded-tr-[50%] before:rounded-bl-[50%]
                                 ">
                                     <div class="absolute bottom-0 text-6xl text-[#da1e37] font-semibold">
-                                        <h2>22</h2>
+                                        <h2 data-aos="fade-up-right" data-aos-delay="100">22</h2>
                                     </div>
                                 </div>
 
-                                <div class="w-full mt-5 px-7 text-[#1c1c1c] text-md text-center lg:text-left">
+                                <div class="w-full mt-5 px-7 text-[#1c1c1c] text-md text-center lg:text-left" data-aos="fade-up" data-aos-delay="300">
                                     <h2>Pasig City 1600</h2>
                                     <h2>Philippines</h2>
                                 </div>
+
                             </div>
                         </div>
 
@@ -188,28 +190,28 @@
                         <ul class="w-full flex flex-col">
                             
                             <a href="pages/programming.html">
-                                <li class="px-4 py-12 border-t-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
+                                <li class="px-4 py-8 lg:py-12 border-t-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
                                     <p class="text-md sm:text-lg md:text-xl lg:text-2xl w-full lg:w-[fit-content]"><span class="text-xs lg:text-sm mr-5">02.1</span>Programming</p>
                                     <span class="flex items-center justify-center gap-4"> <p class="view-work text-sm lg:text-base hidden md:block lg:block">View</p> <i class="ri-arrow-right-line text-2xl arrow"></i> </span>
                                 </li>
                             </a>
                             
                             <a href="pages/projects.html">
-                                <li class="px-4 py-12 border-t-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
+                                <li class="px-4 py-8 lg:py-12 border-t-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
                                     <p class="text-md sm:text-lg md:text-xl lg:text-2xl w-full lg:w-[fit-content]"><span class="text-xs lg:text-sm mr-5">02.2</span> Web Development</p>
                                     <span class="flex items-center justify-center gap-4"> <p class="view-work text-sm lg:text-base hidden md:block lg:block">View Work</p> <i class="ri-arrow-right-line text-2xl arrow"></i> </span>
                                 </li>
                             </a>
                             
                             <a href="javascript:void(null)">
-                                <li class="px-4 py-12 border-t-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
+                                <li class="px-4 py-8 lg:py-12 border-t-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
                                     <p class="text-md sm:text-lg md:text-xl lg:text-2xl w-full lg:w-[fit-content]"><span class="text-xs lg:text-sm mr-5">02.3</span>UI/UX Design</p>
                                     <span class="flex items-center justify-center gap-4"> <p class="view-work text-sm lg:text-base hidden md:block lg:block">Coming soon</p> <i class="ri-arrow-right-line text-2xl arrow"></i> </span>
                                 </li>
                             </a>
                             
                             <a href="pages/projects.html">
-                                <li class="px-4 py-12 border-t-[1px] border-b-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
+                                <li class="px-4 py-8 lg:py-12 border-t-[1px] border-b-[1px] border-[#1c1c1c] border-opacity-50 flex justify-between skills">
                                     <p class="text-md sm:text-lg md:text-xl lg:text-2xl w-full lg:w-[fit-content]"><span class="text-xs lg:text-sm mr-5">02.4</span>Graphic Design</p>
                                     <span class="flex items-center justify-center gap-4"> <p class="view-work text-sm lg:text-base hidden md:block lg:block">View Work</p> <i class="ri-arrow-right-line text-2xl arrow"></i> </span>
                                 </li>
@@ -225,7 +227,7 @@
 
         <section class="w-full min-h-screen relative py-8" id="projects">
             <div class="max-w-[1300px] h-full m-auto overflow-hidden">
-                <div class="w-full h-32 flex flex-col items-start justify-center p-8 mb-10 text-center">
+                <div class="w-full h-32 flex flex-col items-start justify-center p-8 mb-5 text-center">
                     <h2 class="uppercase leading-normal text-3xl lg:text-4xl font-bold text-[#da1e37] tracking-wide" data-aos="fade-right"> 03. </h1>
                     <h2 class="uppercase leading-normal text-3xl lg:text-4xl font-bold text-[#1c1c1c] tracking-wide relative mb-4
                 
@@ -237,24 +239,53 @@
 
                 <div class="w-full h-full">
                     <div class="flex flex-wrap">
-                        <div class="flex-none flex-shrink-0 w-full lg:w-[30%]">
-                            <div class="w-full h-[500px] p-8">
+                        <div class="flex-none flex-shrink-0 w-full lg:w-[30%] flex flex-row items-center">
+                            <div class="w-full h-auto lg:h-[fit-content] p-8">
                                 <h2 class="text-lg uppercase">My Projects</h2>
 
                                 <div class="w-full mt-5">
                                     <div class="flex flex-col items-start justify-center gap-4">
-                                        <div class="w-full p-4 target-div active">
-                                            <div class="target font-semibold">Websites</div>
-                                            <span class="text-sm font-light">Websites I've developed.</span>
+
+                                        <div class="w-full p-4 target-div flex items-center gap-4 active" data-aos="fade-right">
+                                            <div class="text-xl text-white bg-[#1c1c1c] py-1 px-2 rounded">
+                                                <i class="ri-earth-line"></i>
+                                            </div>
+                                            <div class="target">
+                                                <p class="font-semibold"> Websites </p>
+                                                <span class="text-sm font-light">Websites I've developed.</span>
+                                            </div>
                                         </div>
-                                        <div class="w-full p-4 target-div">
-                                            <div class="target font-semibold">Landing Pages</div>
-                                            <span class="text-sm font-light">Landing pages I've developed.</span>
+
+                                        <div class="w-full p-4 flex items-center gap-4 target-div" data-aos="fade-right" data-aos-delay="100">
+                                            <div class="text-xl text-white bg-[#1c1c1c] py-1 px-2 rounded">
+                                                <i class="ri-pages-line"></i>
+                                            </div>
+                                            <div class="target">
+                                                <p class="font-semibold">Landing Pages</p>
+                                                <span class="text-sm font-light">Landing pages I've developed.</span>
+                                            </div>
                                         </div>
-                                        <div class="w-full p-4 target-div">
-                                            <p class="target font-semibold">Graphic Design</p>
-                                            <span class="text-sm font-light">Graphic designs I've made.</span>
+
+                                        <div class="w-full p-4 flex items-center gap-4 target-div" data-aos="fade-right" data-aos-delay="200">
+                                            <div class="text-xl text-white bg-[#1c1c1c] py-1 px-2 rounded">
+                                                <i class="ri-layout-4-line"></i>
+                                            </div>
+                                            <div class="target">
+                                                <p class="font-semibold">UI/UX Designs</p>
+                                                <span class="text-sm font-light">UI/UX Designs I've created.</span>
+                                            </div>
                                         </div>
+
+                                        <div class="w-full p-4 flex items-center gap-4 target-div" data-aos="fade-right" data-aos-delay="300">
+                                            <div class="text-xl text-white bg-[#1c1c1c] py-1 px-2 rounded">
+                                                <i class="ri-artboard-line"></i>
+                                            </div>
+                                            <div class="target">
+                                                <p class="font-semibold"> Graphic Designs </p>
+                                                <span class="text-sm font-light">Graphic designs I've made.</span>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     
                                     <a href="pages/projects.html">
@@ -274,30 +305,30 @@
                             <div class="w-full h-auto lg:h-[fit-content]">
                                 <div class="div-container h-full">
                                     <div class="div-wrapper h-full">
-                                        <div class="w-full h-full slide active">
+                                        <div class="w-full h-full slide active" data-aos="fade-left">
                                             <div class="grid w-full h-full">
                                                 
                                                 <div class="grid grid-cols-8 gap-2">
                                                     <div class="col-span-8 lg:col-span-5 w-full rounded project-1 overflow-hidden">
-                                                        <a data-fslightbox="projects" href="assets/projects/landing-pages/Landing-Page-1.png" class="cursor-default">
+                                                        <a data-fslightbox="projects" href="assets/projects/landing-pages/Landing-Page-1.png">
                                                             <img src="assets/projects/landing-pages/Landing-Page-1.png" class="w-full h-full object-fill" alt="Project 1">
                                                         </a>
                                                     </div>
                                                     
                                                     <div class="col-span-8 lg:col-span-3 md:col-span-4 w-full h-auto lg:h-[310px] rounded project-2 overflow-hidden">
-                                                        <a data-fslightbox="projects" href="assets/projects/landing-pages/Landing-Page-2.png" class="cursor-default">
+                                                        <a data-fslightbox="projects" href="assets/projects/landing-pages/Landing-Page-2.png">
                                                             <img src="assets/projects/landing-pages/Landing-Page-2.png" class="w-full h-full object-fill" alt="Project 2">
                                                         </a>
                                                     </div>
                                              
                                                     <div class="col-span-8 lg:col-span-4 md:col-span-4 w-full h-auto lg:h-[310px] rounded project-3 overflow-hidden">
-                                                        <a data-fslightbox="projects" href="assets/projects/landing-pages/Landing-Page-3.png" class="cursor-default">
+                                                        <a data-fslightbox="projects" href="assets/projects/landing-pages/Landing-Page-3.png">
                                                             <img src="assets/projects/landing-pages/Landing-Page-3.png" class="w-full h-full object-fill" alt="Project 3">
                                                         </a>
                                                     </div>
 
                                                     <div class="col-span-8 lg:col-span-4 w-full rounded project-4 overflow-hidden">
-                                                        <a data-fslightbox="projects" href="assets/projects/websites/website-1.png" class="cursor-default">
+                                                        <a data-fslightbox="projects" href="assets/projects/websites/website-1.png">
                                                             <img src="assets/projects/websites/website-1.png" class="w-full h-full object-fill" alt="Project 4">
                                                         </a>
                                                     </div>
@@ -326,42 +357,66 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="w-full h-full slide">
+                                            <div class="grid w-full h-full">
+                                                 <div class="grid grid-cols-8 gap-2">
+                                                     <div class="col-span-8 lg:col-span-5 w-full bg-[#1c1c1c] rounded project-1 overflow-hidden">
+ 
+                                                     </div>
+ 
+                                                     <div class="col-span-8 lg:col-span-3 md:col-span-4 w-full h-[310px] bg-[#1c1c1c] rounded project-1 overflow-hidden">
+ 
+                                                     </div>
+ 
+                                                     <div class="col-span-8 lg:col-span-3 md:col-span-4 w-full h-[310px] bg-[#1c1c1c] rounded project-1 overflow-hidden">
+                                                         
+                                                     </div>
+ 
+                                                     <div class="col-span-8 lg:col-span-5 w-full bg-[#1c1c1c] rounded project-1 overflow-hidden">
+                                                         
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+
+
                                         <div class="w-full h-full slide">
                                             <div class="grid w-full h-full">
                                                 <div class="grid grid-cols-4 gap-2">
-                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1">
-                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/fault-is-not-yours.png" class="cursor-default">
+                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1 h-[310px]">
+                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/fault-is-not-yours.png">
                                                             <img src="assets/projects/graphic-design/fault-is-not-yours.png" alt="" class="w-full h-full object-fill">
                                                         </a>
                                                     </div>
                                             
-                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1">
-                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/flower-for-you.png" class="cursor-default">
+                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1 h-[310px]">
+                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/flower-for-you.png">
                                                             <img src="assets/projects/graphic-design/flower-for-you.png" alt="" class="w-full h-full object-fill">
                                                         </a>
                                                     </div>
                                             
                                             
-                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1">
-                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/peace.png" class="cursor-default">
+                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1 h-[310px]">
+                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/peace.png">
                                                             <img src="assets/projects/graphic-design/peace.png" alt="" class="w-full h-full object-fill">
                                                         </a>
                                                     </div>
                                             
-                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1">
-                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/off-the-wall.png" class="cursor-default">
+                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1 h-[310px]">
+                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/off-the-wall.png">
                                                             <img src="assets/projects/graphic-design/off-the-wall.png" alt="" class="w-full h-full object-fill">
                                                         </a>
                                                     </div>
                                             
-                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1">
-                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/g-idle.png" class="cursor-default">
+                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1 h-[310px]">
+                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/g-idle.png">
                                                             <img src="assets/projects/graphic-design/g-idle.png" alt="" class="w-full h-full object-fill">
                                                         </a>
                                                     </div>
                                             
-                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1">
-                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/le-sserafim.png" class="cursor-default">
+                                                    <div class="col-span-1 bg-[#1c1c1c] rounded overflow-hidden graphics-1 h-[310px]">
+                                                        <a data-fslightbox="graphics" href="assets/projects/graphic-design/le-sserafim.png">
                                                             <img src="assets/projects/graphic-design/le-sserafim.png" alt="" class="w-full h-full object-fill">
                                                         </a>
                                                     </div>
@@ -393,10 +448,14 @@
                         <footer class="max-w-[1300px] w-full h-full p-4 m-auto flex flex-col items-center justify-between text-[#f2f2f2]">
                             
                             <div class="w-full h-full flex items-center justify-center p-0 lg:p-20">
-                                <div class="text-3xl sm:text-4xl md:text-7xl lg:text-9xl relative p-4
-                                            before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-[#f2f2f2] before:transition-all before:duration-500 hover:before:w-full overflow-hidden
-                                            " id="contact-me-container"> 
-                                    <div id="contact-me"> <a href="#" class="cursor-default">  Contact Me </a>  </div>
+                                <div class="text-3xl sm:text-4xl md:text-7xl lg:text-9xl relative
+                                            before:absolute before:bottom-2 before:left-0 before:w-0 before:h-1 before:bg-[#f2f2f2] before:transition-all before:duration-500 hover:before:w-full overflow-hidden
+                                            "> 
+                                    <div class="w-[fit-content] py-2"> 
+                                        <a href="#" class="cursor-default">
+                                            <h1 class="text-[#f2f2f2] uppercase font-bold text-5xl sm:text-8xl">Contact Me</h1>
+                                        </a>  
+                                    </div>
                                 </div>
                             </div>
                             
@@ -454,8 +513,9 @@
 
             <div class="max-w-[1300px] h-screen flex flex-col items-start justify-between m-auto px-8">
 
-                <div class="w-full">
-                    <ul class="flex flex-col items-start justify-center gap-10 font-normal text-5xl lg:text-6xl tracking-normal text-white mt-20">
+                <div class="w-full mt-32">
+                    <ul class="flex flex-col items-center justify-center gap-10 font-normal text-5xl lg:text-6xl tracking-normal text-white
+                    md:items-start lg:items-start">
                         <li 
                         class="relative before:absolute before:w-0 before:h-[3px] before:-bottom-4 before:bg-white
                         hover:before:w-full hover:before:transition-all hover:before:duration-500 hover:before:ease-in-out
@@ -487,7 +547,7 @@
                             </ul>
                         </div>
                         
-                        <div class="text-white uppercase p-2 flex items-center text-sm md:text-md lg:text-base">
+                        <div class="text-white uppercase p-2 flex items-center text-sm md:text-md lg:text-base mt-2">
                             <p>Portfolio of Roy Gumban</p>
                         </div>
                     </div>

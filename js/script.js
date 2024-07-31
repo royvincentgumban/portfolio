@@ -143,8 +143,7 @@ h1Elements.forEach(h1 => {
 // scroll animation
 const scaleUpContainer = document.querySelector('.scale-up-container');
 const scaleUpSection = document.querySelector('#scale-up');
-const contactMe = document.getElementById("contact-me")
-const contactMeContainer = document.getElementById("contact-me-container");
+
 
 window.addEventListener('scroll', () => {
   scaleUp();
@@ -158,14 +157,6 @@ function scaleUp() {
   scale = Math.max(0.2, Math.min(scale, 1));
   scaleUpContainer.style.transform = `scale(${scale})`;
 
-  if (bottom <= window.innerHeight) {
-    contactMe.style.transform = "translateY(0)";
-    contactMeContainer.classList.add("hover:before:w-full");
-  } else {
-    contactMe.style.transform = "translateY(130%)";
-    contactMeContainer.classList.remove("hover:before:w-full");
-  }
-
 }
 
 const scaleDownContainer = document.querySelector('.scale-down-container');
@@ -178,17 +169,15 @@ window.addEventListener('scroll', () => {
 function scaleDown() {
   let { bottom } = scaleDownSection.getBoundingClientRect();
 
-  let borderRad = bottom - window.innerHeight;
+  let reachBottom = bottom - window.innerHeight;
 
-  if (borderRad <= 0) {
-    let scale = 1 - Math.abs(borderRad) / window.innerHeight * .4 ;
-    
+  if (reachBottom <= 0) {
+    let scale = 1 - Math.abs(reachBottom) / window.innerHeight * .4 ;
     scaleDownContainer.style.transform = `scale(${scale})`;
-    scaleDownContainer.style.borderRadius = '.5rem';
   } else {
     scaleDownContainer.style.transform = 'scale(1)';
-    scaleDownContainer.style.borderRadius = '0';
   }
+  
 }
 
 
@@ -211,15 +200,6 @@ document.addEventListener('DOMContentLoaded', function() {
           targetDiv.classList.add('active');
       });
   });
-});
-
-window.addEventListener('load', function() {
-  document.querySelector('.header-title').classList.add('h1-loaded');
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  var projectTitle = document.querySelector('.project-title');
-  projectTitle.classList.add('span-loaded');
 });
 
 
