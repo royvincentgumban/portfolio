@@ -5,18 +5,17 @@ window.addEventListener('load', () => {
   const removeLoader = () => {
     const endTime = performance.now();
     const loadDuration = endTime - startTime;
-    const minLoaderDuration = 3000; 
-
+    const minLoaderDuration = 1000;
 
     const duration = Math.max(minLoaderDuration, loadDuration);
 
     setTimeout(() => {
       document.body.classList.add('loaded');
       document.body.classList.remove('overflow-hidden');
+
     }, duration);
   };
-
-
+  
   document.body.classList.add('overflow-hidden');
   
   removeLoader();
