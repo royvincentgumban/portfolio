@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
   const removeLoader = () => {
     const endTime = performance.now();
     const loadDuration = endTime - startTime;
-    const minLoaderDuration = 1000;
+    const minLoaderDuration = 2000;
 
     const duration = Math.max(minLoaderDuration, loadDuration);
 
@@ -21,23 +21,7 @@ window.addEventListener('load', () => {
   removeLoader();
 });
 
-// display menu
-const toggleShow = document.getElementById("showToggle");
-const toggleClose = document.getElementById("closeToggle");
-const menuTitle = document.getElementById("menu-title");
-const menu = document.getElementById("menu-show");
 
-toggleShow.addEventListener("click", function() {
-    menu.classList.add('show-menu');
-    menuTitle.innerHTML = "CLOSE";
-    toggleClose.classList.remove('hidden')
-});
-
-toggleClose.addEventListener("click", function() {
-    menu.classList.remove('show-menu');
-    menuTitle.innerHTML = "MENU";
-    toggleClose.classList.add('hidden')
-});
 
 // filtering projects
 document.addEventListener('DOMContentLoaded', function() {
@@ -86,10 +70,51 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Get all sections with an id
+const sections = document.querySelectorAll('section[id]');
 
-// show menu on scroll
+// Listen for scroll events
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  let scrollY = window.pageYOffset;
+
+  // Remove the active class from all navigation links
+  document.querySelectorAll('.custom-nav-item ul li').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58; // Adjust the offset based on your navbar height
+    const sectionId = current.getAttribute("id");
+
+    // Check if the current section is in view
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      // Add the 'active' class to the corresponding navigation link
+      document.querySelector('.custom-nav-item ul li a[href*=' + sectionId + ']')
+        .parentElement.classList.add('active');
+    }
+  });
+}
+
+
+// display menu
 const toggle = document.getElementById("showToggle");
-const titleMenu = document.getElementById("menu-title");
+const customNav = document.getElementById("custom-nav");
+const toggleClose = document.getElementById("closeToggle");
+const menu = document.getElementById("menu-show");
+
+toggle.addEventListener("click", function() {
+  menu.classList.add('show-menu');
+  toggleClose.classList.remove('hidden')
+});
+
+toggleClose.addEventListener("click", function() {
+  menu.classList.remove('show-menu');
+  toggleClose.classList.add('hidden')
+});
+
 
 window.onscroll = function() {scrollFunction()};
 
@@ -97,10 +122,10 @@ function scrollFunction() {
   const screenWidth = window.innerWidth;
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > 10 && screenWidth > 568 && titleMenu.innerHTML.trim() !== "CLOSE") {
-    titleMenu.classList.add('fadeout');
+  if (scrollTop > 10 && screenWidth > 568 ) {
+    customNav.classList.remove('hidden');
   } else {
-      titleMenu.classList.remove('fadeout');
+    customNav.classList.add('hidden');
   }
   
 }
@@ -130,7 +155,7 @@ clickedLI.forEach(item => {
         const href = this.querySelector('a').getAttribute('href');
 
         menu.classList.remove('show-menu');
-        menuTitle.innerHTML = "MENU";
+
         toggleClose.classList.add('hidden')
 
         const targetElement = document.querySelector(href);
@@ -165,7 +190,7 @@ h1Elements.forEach(h1 => {
 
 // scroll animation
 const scaleUpContainer = document.querySelector('.scale-up-container');
-const scaleUpSection = document.querySelector('#scale-up');
+const scaleUpSection = document.querySelector('#contact');
 
 
 window.addEventListener('scroll', () => {
@@ -183,7 +208,7 @@ function scaleUp() {
 }
 
 const scaleDownContainer = document.querySelector('.scale-down-container');
-const scaleDownSection = document.querySelector('#scale-down');
+const scaleDownSection = document.querySelector('#home');
 
 window.addEventListener('scroll', () => {
   scaleDown();

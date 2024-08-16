@@ -27,11 +27,8 @@
     </div>
 
     <main>
-        <div class="fixed top-6 right-12 z-50 flex items-center gap-4 overflow-hidden" id="showToggle">
-            
-            <div class="text-[#f2f2f2] relative hidden lg:block" id="menu-title">
-                <h2>MENU</h2>
-            </div>
+        
+        <div class="fixed top-6 right-12 z-50 flex items-center gap-4 overflow-hidden block md:hidden lg:hidden" id="showToggle">
 
             <div class="w-10 h-10 bg-[#1c1c1c] rounded-full border-[5px] border-[#f2f2f2] text-md text-[#f2f2f2] text-center flex items-center justify-center" >
                 <i class="ri-menu-line"></i>
@@ -45,56 +42,38 @@
             </div>
         </div>
         
+        
+        <div class="custom-nav hidden" id="custom-nav">
+            <div class="custom-nav-item">
+                <ul>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
       
         
 
-        <section class="w-full" id="scale-down">
+        <section class="w-full" id="home">
 
             <div class="sticky">
                 <div class="scale-down-container">
 
-                    <div class="max-w-full h-screen bg-transparent overflow-hidden" id="home">
+                    <div class="max-w-full h-screen bg-transparent overflow-hidden">
                         <div class="h-full w-full bg-[#1c1c1c] relative">
 
                             <div class="cursor hidden md:block lg:block"></div>
                 
                             <div class="max-w-[1300px] w-full h-full m-auto flex items-center justify-center">
-                            <!-- <div class="p-0 lg:p-12 bg-[#f2f2f2] text-[#1c1c1c] flex flex-col absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
-                                    left-0 cursor-default w-full lg:w-auto rounded-lg
-                                    " >
-            
-                                    <div class="text-center mb-10 w-min m-auto header-title border-red-500 border-2">
-                                        <h1 class="text-[#1c1c1c] uppercase font-bold text-6xl sm:text-8xl" id="header-title-h1">Portfolio</h1>
-                                    </div>
-                                    
-                                    <div class="w-full flex items-center justify-between text-center">
-                                        <div class="w-full flex items-center justify-center gap-2 border-r-2 py-2">
-                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 13V16H15V13H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V13H9ZM11 11H13V14H11V11ZM7 5V2C7 1.44772 7.44772 1 8 1H16C16.5523 1 17 1.44772 17 2V5H21C21.5523 5 22 5.44772 22 6V11H15V9H9V11H2V6C2 5.44772 2.44772 5 3 5H7ZM9 3V5H15V3H9Z"></path></svg>
-                                            <span class="text-xs sm:text-sm md:text-md lg:text-base">Web Developer/Designer</span>
-                                        </div>
-                                        
-                                        <div class="w-full flex items-center justify-center gap-2 py-2">
-                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg>
-                                            <span  class="text-xs sm:text-sm md:text-md lg:text-base">gumbanroyst@gmail.com</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="text-center absolute lg:-bottom-1/2 -bottom-52 left-1/2 -translate-x-1/2">
-                                        <div class="flex flex-col items-center justify-center gap-4">
-                                            <p class="uppercase text-[#f2f2f2] text-xs sm:text-sm md:text-md lg:text-base">scroll down</p>
-                                            <span class="text-lg scroll-down-icon"><i class="ri-arrow-down-line text-[#f0eae4]"></i></span>
-                                        </div>   
-                                    </div>
-
-                                </div> 
-                            -->
 
                                 <div class="home-container">
 
                                     <div class="left-box">
                                         <div class="inner-left-box">
                                             <span>Download CV</span>
-                                            <i class="ri-download-2-line"></i>
                                         </div>
                                     </div>
 
@@ -102,8 +81,10 @@
                                     <div class="p-0 lg:p-12 bg-transparent text-[#1c1c1c] flex flex-col absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
                                         left-0 cursor-default w-full lg:w-auto rounded-lg" >
             
-                                        <div class="text-center mb-10 w-min m-auto header-title">
-                                            <h1 class="text-[#1c1c1c] uppercase font-bold text-6xl sm:text-8xl" data-aos="fade-up">Port<span class="text-[#718355]">folio</span></h1>
+                                        <div class="text-center mb-0 lg:mb-6 w-min m-auto header-title-container">
+                                            <div class="top-box-design"></div>
+                                            <h1 class="text-[#1c1c1c] uppercase font-bold text-6xl  sm:text-7xl lg:text-8xl" data-aos="fade-up">Port<span class="header-half">folio</span></h1>
+                                            <div class="bottom-box-design"></div>
                                         </div>
                                     
                                         <div class="w-full flex flex-col md:flex-row lg:flex-row items-center justify-between text-center p-8 lg:p-0
@@ -111,7 +92,7 @@
                                         ">
                                             <div class="w-full flex items-center justify-center gap-2  border-b-2 sm:border-r-0 md:border-b-0 md:border-r-2 lg:border-b-0 lg:border-r-2 border-[#1c1c1c] py-2">
                                                 <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 13V16H15V13H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V13H9ZM11 11H13V14H11V11ZM7 5V2C7 1.44772 7.44772 1 8 1H16C16.5523 1 17 1.44772 17 2V5H21C21.5523 5 22 5.44772 22 6V11H15V9H9V11H2V6C2 5.44772 2.44772 5 3 5H7ZM9 3V5H15V3H9Z"></path></svg>
-                                                <span class="text-sm sm:text-sm md:text-md lg:text-base">Web Developer/Designer</span>
+                                                <span class="text-sm sm:text-sm md:text-md lg:text-base">Front-End Developer</span>
                                             </div>
                                             
                                             <div class="w-full flex items-center justify-center gap-2 py-2">
@@ -135,12 +116,14 @@
                                         <img src="assets/illustrations/illustration_cat2.png" class="cat-center" alt="Cat 1">
                                         <img src="assets/illustrations/illustration_cat1.png" class="cat-2" alt="Cat 2">
                                     </div>
-                                    
-
                                 </div>
-
+                                <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+                                    <span class="text-[#f2f2f2] uppercase">Scroll Down</span>
+                                </div>
                             </div>
-            
+
+
+
                         </div>
                     </div>
 
@@ -179,11 +162,7 @@
 
                         <div class="flex-none flex-shrink-0 w-full lg:w-[70%] p-2">
                             <div class="w-full px-4 py-8">
-                                <div class="w-full text-[#1c1c1c] text-justify font-light">
-                                    <p>Hello! I'm Roy Gumban, and I'm super excited to dive into the world of web development. The endless possibilities of creating interactive and meaningful digital experiences have always fascinated me, sparking my journey to become a web developer. I've been coding since high school, learning the fundamentals of web programming. From working with HTML and CSS to dabbling in JavaScript. I'm fascinated by the transformation of lines of code into visually appealing webpages. I'm thrilled about the prospect of learning and growing as a web developer, and I can't wait to see where this journey takes me!
-                                    </p>
-                                </div>
-
+                                
                                 <div class="w-full">
                                     <h2 class="uppercase font-semibold text-[#718355] mt-4 mb-2">Education</h2>
                                     <div class="w-full">
@@ -200,12 +179,14 @@
                                         </div>
 
                                         <div class="w-full">
-                                            <p class="font-light">Dean's Lister (2020-2024) </p>
-                                            <p class="font-light">Graduated with Latin Honor (GWA: 1.51)</p>
+                                            <ul class="list-disc px-4">
+                                                <li class="font-light">Dean's Lister (2020-2024) </li>
+                                                <li class="font-light">Graduated Cum Laude</li>
+                                            </ul>
                                         </div>
                                     </div>
 
-                                    <div class="w-full mt-4">
+                                    <div class="w-full mt-2">
                                         <div class="w-full mb-2">
                                             <div class="w-full h-full flex justify-between">
                                                 <h2 class="font-semibold text-[#1c1c1c]">Rizal High School</h2>
@@ -219,7 +200,38 @@
                                         </div>
                                         
                                         <div class="w-full">
-                                            <p class="font-light">Graduated with Honor</p>
+                                            <ul class="list-disc px-4">
+                                                <li class="font-light">Graduated with Honor</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="w-full mt-5">
+                                    <h2 class="uppercase font-semibold text-[#718355] mt-4 mb-2">Experience</h2>
+                                    <div class="w-full">
+                                        <div class="w-full mb-2">
+                                            <div class="w-full flex justify-between">
+                                                <h2 class="font-semibold text-[#1c1c1c]">EasySell PH </h2>
+                                                <h2 class="font-semibold text-[#1c1c1c] hidden lg:block">Pasig City, Metro Manila</h2>
+                                            </div>
+    
+                                            <div class="w-full flex justify-between">
+                                                <h2 class="font-regular text-[#1c1c1c]">Front-End Developer Intern</h2>
+                                                <h2 class="font-regular text-[#1c1c1c] hidden lg:block">March 9, 2024 - May 27, 2024</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-full">
+                                            <ul class="list-disc px-4">
+                                                <li class="font-light">Build and style user interfaces based on provided designs or wireframes.</li>
+                                                <li class="font-light">Ensure functionality, compatibility, and security across different browsers and devices.</li>
+                                                <li class="font-light">Improve the performance of web pages, such as reducing load times or optimizing assets.</li>
+                                                <li class="font-light">Participate in team meetings, communicate progress, and work with designers, back-end developers, and other stakeholders.</li>
+                                            </ul>
+                                            
                                         </div>
                                     </div>
 
@@ -234,7 +246,7 @@
             </div>
         </section>
 
-        <section class="w-full min-h-[50vh] relative py-8" id="skills">
+        <section class="w-full min-h-[50vh] relative py-8" id="about">
             <div class="max-w-[1300px] h-full m-auto overflow-hidden">
                 <div class="w-full h-32 flex flex-col items-start justify-center p-8 mb-10">
                     <h2 class="uppercase leading-normal text-3xl lg:text-4xl font-bold text-[#718355] tracking-wide" data-aos="fade-right"> 02. </h2>
@@ -351,7 +363,7 @@
                                     <a href="pages/projects.html">
                                         <div class="w-full p-4 mt-14 rounded border-2 border-[#1c1c1c] relative hover:text-[#f2f2f2]
 
-                                        before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#1c1c1c] hover:before:w-full before:transition-all before:duration-500 before:z-[-1] 
+                                        before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#1c1c1c] hover:before:w-full before:transition-all before:duration-500 before:z-[-1]
                                         ">
                                             <p class="text-center">Browse Projects</p>
                                         </div>
@@ -500,7 +512,7 @@
             </div>
         </section>
 
-        <section class="w-full min-h-screen" id="scale-up">
+        <section class="w-full min-h-screen" id="contact">
             <div class="sticky">
                 <div class="scale-up-container">
                         

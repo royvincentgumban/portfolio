@@ -94,6 +94,54 @@ img {
 }
 
 
+
+
+/* -------------------- CUSTOM NAV -------------------- */
+
+.custom-nav {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    padding: .5em;
+    z-index: 999;
+}
+
+.custom-nav-item {
+    max-width: fit-content;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 0 .55rem;
+
+    background: #f2f2f2;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.custom-nav-item ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.custom-nav-item ul li {
+    padding: .35rem 2rem;
+    border-radius: 5rem;
+}
+
+.custom-nav-item ul li.active {
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+}
+
+
+
 /* -------------------- HOME SECTION -------------------- */
 
 .home-container {
@@ -110,8 +158,8 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 70px;
+    width: 160px;
+    height: 65px;
     background: #1c1c1c;
     padding-right: 0.65rem;
     padding-bottom: 0.65rem;
@@ -128,7 +176,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 5px;
     cursor: pointer;
 }
 
@@ -162,11 +210,11 @@ img {
 
 .right-box-circle {
     position: absolute;
-    bottom: -40px;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 0.65rem;
     border-radius: 100%;
     z-index: 2;
@@ -188,32 +236,30 @@ img {
 
 
 
-
 .right-box-circle::before {
     content: '';
     position: absolute;
-    bottom: 40px;
-    right: -14.6px;
+    bottom: 35px;
+    right: -14px;
     width: 15px;
     height: 15px;
     border-bottom-left-radius: .65rem;
-
     background: #f2f2f2;
-    box-shadow: -5px 5px 0 #1c1c1c;
+    box-shadow: -5px 6px 0 #1c1c1c;
 }
 
 
 .right-box-circle::after {
     content: '';
     position: absolute;
-    bottom: 40px;
+    bottom: 35px;
     left: -13.5px;
     width: 15px;
     height: 15px;
     border-bottom-right-radius: .65rem;
 
     background: #f2f2f2;
-    box-shadow: 5px 5px 0 #1c1c1c;
+    box-shadow: 5px 6px 0 #1c1c1c;
 }
 
 .bottom-box {
@@ -236,7 +282,7 @@ img {
 
 .bottom-box .cat-center {
     position: absolute;
-    top: -8px;
+    top: -3px;
     left: 51%;
     transform: translateX(-50%);
 }
@@ -293,9 +339,67 @@ img {
     transform: translateX(0);
 }
 
-.header-title {
-    overflow: hidden;
+.header-title-container {
+    position: relative;
+    padding: 1rem 2rem;
+    border: 2px solid #1c1c1c;
 }
+
+.header-title-container::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: #1c1c1c;
+}
+
+.header-title-container::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: #1c1c1c;
+}
+
+.top-box-design, .bottom-box-design {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #1c1c1c;
+}
+
+
+.top-box-design {
+    top: -6px;
+    left: -6px;
+}
+
+.bottom-box-design {
+    bottom: -6px;
+    left: -6px;
+}
+
+
+.header-half {
+    color: transparent;
+    -webkit-text-stroke-color: #1c1c1c;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+/* .header-title h1 {
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.header-title h1.page-loaded {
+    transform: translateY(0%);
+} */
+
 
 
 .div-wrapper {
@@ -328,7 +432,6 @@ img {
     border-radius: 0.25em;
     color: #f2f2f2;
 }
-
 
 
 /* -------------------- ABOUT PAGE -------------------- */
@@ -416,9 +519,9 @@ img {
     color: #1c1c1c;
 }
 
-/* -------------------- SCALE -------------------- */
+/* -------------------- SCALE UP -------------------- */
 
-#scale-up {
+#contact {
     display: flex;
     justify-content: center;
     min-height: 200vh;
@@ -443,7 +546,9 @@ img {
     padding: 2em 2em;
 }
 
-#scale-down {
+/* -------------------- SCALE DOWN -------------------- */
+
+#home {
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -681,6 +786,13 @@ input:focus, textarea:focus {
         max-width: 100%;
     }
 
+
+}
+
+@media only screen and (max-width:768px)  {
+    .custom-nav {
+        display: none;
+    }
 }
 
 
@@ -717,5 +829,8 @@ input:focus, textarea:focus {
         width: 90%;
     }
 
+    .custom-nav {
+        display: none;
+    }
 
 }
