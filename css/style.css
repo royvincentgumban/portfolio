@@ -865,7 +865,7 @@ input:focus, textarea:focus {
     }
 
     .header-title-container {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
     }
 
     .bento-item.item-large, .bento-item.item-small {
