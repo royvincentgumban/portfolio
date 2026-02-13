@@ -827,7 +827,7 @@ input:focus, textarea:focus {
 }
 
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:440px) {
 
     #showToggle {
         display: flex !important;
