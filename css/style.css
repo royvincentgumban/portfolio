@@ -342,7 +342,7 @@ img {
 .header-title-container {
     position: relative;
     padding: 1rem 2rem;
-
+    border: 2px solid #1c1c1c;
 }
 
 .header-title-container::before {
