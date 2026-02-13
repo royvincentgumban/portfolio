@@ -352,7 +352,7 @@ img {
     right: -6px;
     width: 12px;
     height: 12px;
-    background-color: #1c1c1c;
+    background-color: red;
 }
 
 .header-title-container::after {
@@ -362,14 +362,14 @@ img {
     right: -6px;
     width: 12px;
     height: 12px;
-    background-color: #1c1c1c;
+    background-color: red;
 }
 
 .top-box-design, .bottom-box-design {
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: #1c1c1c;
+    background-color: red;
 }
 
 
