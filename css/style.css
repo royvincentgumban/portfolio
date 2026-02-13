@@ -352,7 +352,7 @@ img {
     right: -6px;
     width: 12px;
     height: 12px;
-    background-color: red;
+    background-color: #1c1c1c;
 }
 
 .header-title-container::after {
@@ -362,14 +362,14 @@ img {
     right: -6px;
     width: 12px;
     height: 12px;
-    background-color: red;
+    background-color: #1c1c1c;
 }
 
 .top-box-design, .bottom-box-design {
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: red;
+    background-color: #1c1c1c;
 }
 
 
@@ -865,7 +865,7 @@ input:focus, textarea:focus {
     }
 
     .header-title-container {
-        padding: 1rem 1.5rem;
+        padding: 0;
         border: 2px solid red;
     }
 
