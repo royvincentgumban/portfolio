@@ -827,7 +827,7 @@ input:focus, textarea:focus {
 }
 
 
-@media only screen and (max-width:440px) {
+@media only screen and (max-width:320px) {
 
     #showToggle {
         display: flex !important;
@@ -865,7 +865,7 @@ input:focus, textarea:focus {
     }
 
     .header-title-container {
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 1rem;
     }
 
     .bento-item.item-large, .bento-item.item-small {
